@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Pre-build phase...
+      - mvn -version
+  build:
+    - echo Build started on `date`
+    - mvn clean package
+  post_build:
+    - echo Build completed on `date`
+artifacts:
+  files:
+    - target/aws-cicd-app.jar
+  discard-paths: yes

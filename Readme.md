@@ -1,7 +1,7 @@
 
 
 # Deploy with using terminal 
-create ec2 instance with pem then login by following connection 
+create ec2 instance with pem [`keypair`] then login by following connection 
 ssh -i "tm.pem" ubuntu@ec2-13-222-125-138.compute-1.amazonaws.com
 
 ## Move jar local to remote instance 
